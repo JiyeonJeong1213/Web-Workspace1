@@ -7,16 +7,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-	h1 {color:red;}
+	
 </style>
 </head>
 <body>
 	<% 
 		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 E요일");
 		String today = sdf.format(date);
 	%>
 	
-	<h4><%= today %></h4>
+	<%= today %>
 </body>
 </html>
